@@ -1,4 +1,4 @@
-# Projeto Exmplo de contador simples
+# Projeto Exemplo de contador simples
 
 ### ReactJS / Typescript / Styled Components
 
@@ -10,3 +10,6 @@ No diretório do projeto, você pode executar :
 
 Executa o aplicativo no modo de desenvolvimento.\
 Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
+
+
+<img src="src/Screenshot_5.png" />
