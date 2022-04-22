@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { App2 } from "./components/App2";
+import { createGlobalStyle } from "styled-components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const Global = createGlobalStyle`
+
+  :root{
+    --blue-point: #2c2c54;
+    --blue-purple: #343460;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: var(--blue-point)
+  }  
+  span {
+    background: transparent
+  }
+`
+
+export const App = () => {
+  return ( 
+    <>
+      <App2/>  
+      <Global/>
+    </> 
   );
 }
-
-export default App;
